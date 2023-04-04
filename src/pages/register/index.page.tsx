@@ -87,7 +87,7 @@ export default function RegisterPage() {
             <FormError size="sm">{errors.name.message}</FormError>
           )}
         </label>
-        <Button disabled={isSubmitting}>
+        <Button type="submit" disabled={isSubmitting}>
           Próximo passo
           <ArrowRight />
         </Button>
