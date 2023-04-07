@@ -20,7 +20,7 @@ import { api } from '@/lib/axios'
 import { useRouter } from 'next/router'
 
 const updateProfileSchema = z.object({
-  bio: z.string().min(10).max(255),
+  bio: z.string().min(2).max(255),
 })
 
 type UpdateProfileData = z.infer<typeof updateProfileSchema>
