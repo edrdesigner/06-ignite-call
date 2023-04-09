@@ -42,7 +42,7 @@ export default async function handler(
         data: {
           week_day: interval.weekDay,
           time_start_in_minutes: interval.startTimeInMinutes,
-          time_end_ind_minutes: interval.endTimeInMinutes,
+          time_end_in_minutes: interval.endTimeInMinutes,
           user_id: session.user.id,
         },
       })

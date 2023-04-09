@@ -62,7 +62,7 @@ model UserTimeInterval {
   id                    String @id @default(uuid())
   week_day              Int
   time_start_in_minutes Int
-  time_end_ind_minutes  Int
+  time_end_in_minutes   Int
   user                  User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
   user_id               String
 
